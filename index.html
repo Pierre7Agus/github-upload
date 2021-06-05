@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Formulario</title>
+</head>
+<body>
+	<div class="contenedor">
+		<header class="contenedor_titulo" >
+			<h1 id="title" >Plantilla de Formulario</h1>
+			<p id="description">Gracias por tomarte el tiempo de llenar este formulario</p>
+		</header>
+		<form class="contenedor_formulario" id="survey-form" >
+			
+			<div class="contenedor_formulario_entrada">
+				<label for="name" id="name-label">Nombre</label>
+				<input type="text"
+				placeholder="Ingrese su nombre" 
+				class="contenedor_formulario_entrada_datos" 
+				id="name" 
+				required
+				>
+			</div>
+
+			<div class="contenedor_formulario_entrada">
+				<label for="email" id="email-label">Email</label>
+				<input type="email"
+				placeholder="Ingrese su email"
+				class="contenedor_formulario_entrada_datos" 
+				id="email" 
+				required
+				>
+			</div>
+
+			<div class="contenedor_formulario_entrada">
+				<label for="number" id="number-label">Edad</label>
+				<input type="number"
+				placeholder="Edad" 
+				class="contenedor_formulario_entrada_datos"
+				min="10" 
+				max="90" 
+				id="number" 
+				required
+				>
+			</div>
+
+			<div class="contenedor_formulario_entrada">
+				<label for="seleccion">Selecciona tu ocupacion actual</label>
+				<select name="ocupacion" id="dropdown" class="contenedor_formulario_entrada_datos">
+					<option value disable selected>Escoje una opcion:</option>
+					<option value="estudiante">Estudiante</option>
+					<option value="profesor">Profesor</option>
+					<option value="abogado">Abogado</option>
+					<option value="licenciado">Licenciado</option>
+					<option value="doctor">Doctor</option>
+					<option value="desarrollador">Desarrollador de Software</option>
+				</select>
+			</div>
+
+			<div class="contenedor_formulario_entrada">
+				<p class="contenedor_formulario_entrada_titulo">¿Qué continente te gustaría visitar?</p>
+				<label for="viajar">
+				<input type="radio"
+				class="contenedor_formulario_entrada_radio"
+				id="viajar"
+				name="continente"
+				value="europa">
+				Europa</label>
+
+				<label for="viajar2">
+				<input type="radio"
+				class="contenedor_formulario_entrada_radio"
+				id="viajar2"
+				name="continente"
+				value="africa">
+				África</label>
+
+				<label for="viajar3">
+				<input type="radio"
+				class="contenedor_formulario_entrada_radio"
+				id="viajar3"
+				name="continente"
+				value="America">
+				Ámerica</label>
+
+				<label for="viajar4">
+				<input type="radio"
+				class="contenedor_formulario_entrada_radio"
+				id="viajar4"
+				name="continente"
+				value="asia">
+				Asia</label>
+
+				<label for="viajar5">
+				<input type="radio"
+				class="contenedor_formulario_entrada_radio"
+				id="viajar5"
+				name="continente"
+				value="oceania">
+				Oceanía</label>
+			</div>
+
+			<div class="contenedor_formulario_entrada">
+				<p class="contenedor_formulario_entrada_titulo">¿Cuál es la ciudad mas bonita que has visitado?</p>
+
+				<label for="lo2">
+				<input type="checkbox"
+				id="lo2"
+				name="ciudad"
+				class="contenedor_formulario_entrada_check"
+				value="cuenca">
+				Cuenca - Ecuador</label>
+
+				<label for="lo3">
+				<input type="checkbox"
+				id="lo3"
+				name="ciudad"
+				class="contenedor_formulario_entrada_check"
+				value="roma">
+				Roma - Italia</label>
+
+				<label for="lo4">
+				<input type="checkbox"
+				id="lo4"
+				name="ciudad"
+				class="contenedor_formulario_entrada_check"
+				value="paris">
+				París - Francia</label>
+
+
+				<label for="lo5">
+				<input type="checkbox"
+				id="lo5"
+				name="ciudad"
+				class="contenedor_formulario_entrada_check"
+				value="montevideo">
+				Montevideo - Uruguay</label>
+
+
+				<label for="lo6">
+				<input type="checkbox"
+				id="lo6"
+				name="ciudad"
+				class="contenedor_formulario_entrada_check"
+				value="asuncion">
+				Asuncion - Paraguay</label>
+
+				<label for="lo7">
+				<input type="checkbox"
+				id="lo7"
+				name="ciudad"
+				class="contenedor_formulario_entrada_check"
+				value="vancouver">
+				Vancouver - Canada</label>
+			</div>
+
+			
+			<div class="contenedor_formulario_entrada">
+				<p class="contenedor_formulario_entrada_titulo">¿Alguna sugerencia o comentario?</p>
+				<textarea name="comentario" cols="30" rows="10">Ingrese sus comentarios.</textarea>
+			</div>
+
+			<div class="contenedor_formulario_entrada">
+				<button id="submit" type="submit">Enviar</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
